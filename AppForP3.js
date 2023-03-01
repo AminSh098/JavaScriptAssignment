@@ -8,12 +8,6 @@ const family = [
     { x: 3, f: 'great granddaughter' ,m: 'great grandson' }
 ];
 
-function generation(number) {
-    return family.filter((b) => {
-        return b.x === number;
-    })
-}
-
 function whoAmI(gender,number) {
     const generation = family.filter((b) => {
         return b.x === number;
